@@ -75,6 +75,7 @@ namespace web_api.Controllers
         [HttpPost]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
+            category.CreateDate = DateTime.Now;
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
 

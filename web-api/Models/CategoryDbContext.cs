@@ -13,5 +13,6 @@ namespace web_api.Models
             
         }
         public DbSet<Category> Categories { set; get; }
+        public DbSet<Account> Accounts { set; get; }
     }
 }
